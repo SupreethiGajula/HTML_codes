@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>a sample form</title>
+
+    </head>
+    <body>
+        <!--POST - Sensitive information, GET- insignificant information-->
+        <form action = "index.php", method="post" enctype = "multipart/form-data">
+            <label for = "username">usename:</label>
+            <input type = "text" id = "username" placeholder="Spongebob" minlength = "3" maxlength = "10" required><br>
+            
+            <label for = "password">password:</label>
+            <input type = "password" id = "password" required><br>
+
+            <label for = "email">email:</label>
+            <input type = "email" placeholder = abc@gmail.com><br>
+
+            <label for="phone">phone:</label>
+            <input type = "tel" pattern="[0-9]{10}" placeholder="1234567890"><br>
+
+            <label for = "bday"> birthdate:</label>
+            <input type = "date"><br>
+
+            <label for = "quantity">quantity:</label>
+            <input type="number" min = "0" max = "100" value = "1"><br><!--value sets a default something to the field-->
+            
+            <label for = "title">title:</label>
+
+            <label for = "Mr.">Mr.</label>
+            <input type = "radio" id = "Mr." name = "title"><!--this name ensures only one will be selected-->
+            
+            <label for = "Ms.">Ms.</label>
+            <input type = "radio" id = "Ms." name = "title">
+            
+            <label for = "other">Mr</label>
+            <input type = "radio" id = "other" name = "title"><br>
+
+            <!--this creates a dropdown menu to select from either of the threee options-->
+            <label for = "payment">payment type:</label>
+            <select>
+                <option value = "visa">visa</option>
+                <option value = "mastercard">mastercard</option>
+                <option value = "giftcard">giftcard</option><br>
+            </select><br>
+
+            <label for = "subscribe">subscribe</label>
+            <input type = "checkbox" id = "subscribe"><br>
+
+            <label for = "comment">comment:</label>
+            <textarea id = "comment" rows = 3 cols = 25></textarea><br>
+
+            
+            <label for = "file">file</label>
+            <input type = "file" id = "file" accept = "image/png,image/jpg"><br>
+
+
+            <input type = "reset"><br>
+            <input type = "submit">
+
+        </form>
+    </body>
+</html>
