@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>sample buttons</title>
+    </head>
+    <body>
+        <!--this button on click takes you to html tutorial page of w3 schools-->
+        <a href = "https://www.w3schools.com/html/default.asp">
+            <button style = "font-size: large;background-color: blanchedalmond;"> click here </button>
+        </a>
+        <!--a little usage of javascript here-->
+        <button style = "font-size: larger;" onclick="dosomething()">click me</button>
+        <p id = "greeting">hello</p>
+        <script>
+            function dosomething(){
+                document.getElementById("greeting").innerHTML= "good bye";
+            }
+        </script>
+    </body>
+</html>
